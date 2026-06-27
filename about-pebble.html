@@ -4,12 +4,14 @@
   <meta charset="utf-8">
   <title>About — Pebble</title>
   <style>
-    body { font-family: 'Monaco','Courier New', monospace; margin:24px; background:#fce4ec; color:#1f2937; }
+    * { box-sizing: border-box; }
+    body { font-family: 'Monaco','Courier New', monospace; margin:0; padding:24px; background:#fce4ec; color:#1f2937; min-height:100vh; }
     a { color:#2563eb; text-decoration:none; }
-    .container { max-width:900px; margin:0 auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
-    header { display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+    .container { max-width:900px; margin:0 auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,0.06); overflow:auto; }
+    header { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; margin-bottom:16px; gap:8px; }
     nav a { margin-left:12px; }
-    .main-image { width:100%; height:400px; object-fit:cover; border-radius:8px; margin:20px 0; }
+    .main-image { width:100%; height:auto; max-height:60vh; object-fit:cover; border-radius:8px; margin:20px 0; display:block; }
+    p { line-height:1.5; }
   </style>
 </head>
 <body>
@@ -21,7 +23,7 @@
 
     <img src="pics/IMG_3331.jpg" alt="Pebble" class="main-image">
 
-    <p>She was named Pebble because at some point in her life, she was small and grey. Now she's more like a boulder.... Her birthday is October 1st, 2025. Fun fact, she rarely meows and would muc[...]
+    <p>She was named Pebble because at some point in her life, she was small and grey. Now she's more like a boulder.... Her birthday is October 1st, 2025. Fun fact, she rarely meows and would much rather purr.</p>
 
     <h2>Hobbies</h2>
     <p>Pebble likes to spend her free time opening the cabinets and eating loaves of bread. She enjoys solving puzzles and running around the apartment, squeebling.</p>
