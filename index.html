@@ -7,119 +7,134 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 30px;
-            background: #f5f5f5;
-            color: #222;
+            padding: 24px;
+            background: #f3f4f6;
+            color: #1f2937;
         }
         h1 {
             text-align: center;
             margin-bottom: 24px;
+            font-size: 2rem;
         }
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 16px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 18px;
+            align-items: start;
         }
         .card {
             background: white;
-            border-radius: 12px;
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.14);
+        }
+        .card a {
+            display: block;
+            text-decoration: none;
         }
         img {
             display: block;
             width: 100%;
-            height: 220px;
+            height: 320px;
             object-fit: cover;
+            transition: transform 0.2s ease;
+        }
+        .card:hover img {
+            transform: scale(1.03);
         }
     </style>
 </head>
 <body>
 <h1>Walmart and Pebble Photos</h1>
 <div class="gallery">
-    <div class="card"><img src="pics/6975283489072638972.jpg" alt="6975283489072638972.jpg"></div>
-    <div class="card"><img src="pics/IMG_0018.jpg" alt="IMG_0018.jpg"></div>
-    <div class="card"><img src="pics/IMG_0257.jpg" alt="IMG_0257.jpg"></div>
-    <div class="card"><img src="pics/IMG_0511.jpg" alt="IMG_0511.jpg"></div>
-    <div class="card"><img src="pics/IMG_0799.jpg" alt="IMG_0799.jpg"></div>
-    <div class="card"><img src="pics/IMG_0826.jpg" alt="IMG_0826.jpg"></div>
-    <div class="card"><img src="pics/IMG_0837.jpg" alt="IMG_0837.jpg"></div>
-    <div class="card"><img src="pics/IMG_0880.jpg" alt="IMG_0880.jpg"></div>
-    <div class="card"><img src="pics/IMG_0906.jpg" alt="IMG_0906.jpg"></div>
-    <div class="card"><img src="pics/IMG_0909.jpg" alt="IMG_0909.jpg"></div>
-    <div class="card"><img src="pics/IMG_2097.jpg" alt="IMG_2097.jpg"></div>
-    <div class="card"><img src="pics/IMG_2118.jpg" alt="IMG_2118.jpg"></div>
-    <div class="card"><img src="pics/IMG_2299.jpg" alt="IMG_2299.jpg"></div>
-    <div class="card"><img src="pics/IMG_2320.jpg" alt="IMG_2320.jpg"></div>
-    <div class="card"><img src="pics/IMG_2323.jpg" alt="IMG_2323.jpg"></div>
-    <div class="card"><img src="pics/IMG_2340.jpg" alt="IMG_2340.jpg"></div>
-    <div class="card"><img src="pics/IMG_2451.jpg" alt="IMG_2451.jpg"></div>
-    <div class="card"><img src="pics/IMG_2568.jpg" alt="IMG_2568.jpg"></div>
-    <div class="card"><img src="pics/IMG_2701.jpg" alt="IMG_2701.jpg"></div>
-    <div class="card"><img src="pics/IMG_2907.jpg" alt="IMG_2907.jpg"></div>
-    <div class="card"><img src="pics/IMG_2917.jpg" alt="IMG_2917.jpg"></div>
-    <div class="card"><img src="pics/IMG_2919.jpg" alt="IMG_2919.jpg"></div>
-    <div class="card"><img src="pics/IMG_2933.jpg" alt="IMG_2933.jpg"></div>
-    <div class="card"><img src="pics/IMG_2940.jpg" alt="IMG_2940.jpg"></div>
-    <div class="card"><img src="pics/IMG_2942.jpg" alt="IMG_2942.jpg"></div>
-    <div class="card"><img src="pics/IMG_2975.jpg" alt="IMG_2975.jpg"></div>
-    <div class="card"><img src="pics/IMG_3005.jpg" alt="IMG_3005.jpg"></div>
-    <div class="card"><img src="pics/IMG_3017.jpg" alt="IMG_3017.jpg"></div>
-    <div class="card"><img src="pics/IMG_3026.jpg" alt="IMG_3026.jpg"></div>
-    <div class="card"><img src="pics/IMG_3027.jpg" alt="IMG_3027.jpg"></div>
-    <div class="card"><img src="pics/IMG_3030.jpg" alt="IMG_3030.jpg"></div>
-    <div class="card"><img src="pics/IMG_3227.jpg" alt="IMG_3227.jpg"></div>
-    <div class="card"><img src="pics/IMG_3292.jpg" alt="IMG_3292.jpg"></div>
-    <div class="card"><img src="pics/IMG_3313.jpg" alt="IMG_3313.jpg"></div>
-    <div class="card"><img src="pics/IMG_3331.jpg" alt="IMG_3331.jpg"></div>
-    <div class="card"><img src="pics/IMG_3333.jpg" alt="IMG_3333.jpg"></div>
-    <div class="card"><img src="pics/IMG_3346.jpg" alt="IMG_3346.jpg"></div>
-    <div class="card"><img src="pics/IMG_4464.jpg" alt="IMG_4464.jpg"></div>
-    <div class="card"><img src="pics/IMG_4490.jpg" alt="IMG_4490.jpg"></div>
-    <div class="card"><img src="pics/IMG_4524.jpg" alt="IMG_4524.jpg"></div>
-    <div class="card"><img src="pics/IMG_4532.jpg" alt="IMG_4532.jpg"></div>
-    <div class="card"><img src="pics/IMG_4538.jpg" alt="IMG_4538.jpg"></div>
-    <div class="card"><img src="pics/IMG_4578.jpg" alt="IMG_4578.jpg"></div>
-    <div class="card"><img src="pics/IMG_4596.jpg" alt="IMG_4596.jpg"></div>
-    <div class="card"><img src="pics/IMG_4607.jpg" alt="IMG_4607.jpg"></div>
-    <div class="card"><img src="pics/IMG_4609.jpg" alt="IMG_4609.jpg"></div>
-    <div class="card"><img src="pics/IMG_4855.jpg" alt="IMG_4855.jpg"></div>
-    <div class="card"><img src="pics/IMG_5132.jpg" alt="IMG_5132.jpg"></div>
-    <div class="card"><img src="pics/IMG_5140.jpg" alt="IMG_5140.jpg"></div>
-    <div class="card"><img src="pics/IMG_5143.jpg" alt="IMG_5143.jpg"></div>
-    <div class="card"><img src="pics/IMG_5344.jpg" alt="IMG_5344.jpg"></div>
-    <div class="card"><img src="pics/IMG_5457.jpg" alt="IMG_5457.jpg"></div>
-    <div class="card"><img src="pics/IMG_5544.jpg" alt="IMG_5544.jpg"></div>
-    <div class="card"><img src="pics/IMG_5545.jpg" alt="IMG_5545.jpg"></div>
-    <div class="card"><img src="pics/IMG_5573.jpg" alt="IMG_5573.jpg"></div>
-    <div class="card"><img src="pics/IMG_5664.jpg" alt="IMG_5664.jpg"></div>
-    <div class="card"><img src="pics/IMG_5837.jpg" alt="IMG_5837.jpg"></div>
-    <div class="card"><img src="pics/IMG_5890.jpg" alt="IMG_5890.jpg"></div>
-    <div class="card"><img src="pics/IMG_6010.jpg" alt="IMG_6010.jpg"></div>
-    <div class="card"><img src="pics/IMG_6881.jpg" alt="IMG_6881.jpg"></div>
-    <div class="card"><img src="pics/IMG_6995.jpg" alt="IMG_6995.jpg"></div>
-    <div class="card"><img src="pics/IMG_7014.jpg" alt="IMG_7014.jpg"></div>
-    <div class="card"><img src="pics/IMG_7055.jpg" alt="IMG_7055.jpg"></div>
-    <div class="card"><img src="pics/IMG_7247.jpg" alt="IMG_7247.jpg"></div>
-    <div class="card"><img src="pics/IMG_7263.jpg" alt="IMG_7263.jpg"></div>
-    <div class="card"><img src="pics/IMG_7360.jpg" alt="IMG_7360.jpg"></div>
-    <div class="card"><img src="pics/IMG_7367.jpg" alt="IMG_7367.jpg"></div>
-    <div class="card"><img src="pics/IMG_7535.jpg" alt="IMG_7535.jpg"></div>
-    <div class="card"><img src="pics/IMG_7545.jpg" alt="IMG_7545.jpg"></div>
-    <div class="card"><img src="pics/IMG_7548.jpg" alt="IMG_7548.jpg"></div>
-    <div class="card"><img src="pics/IMG_7586.jpg" alt="IMG_7586.jpg"></div>
-    <div class="card"><img src="pics/IMG_7602.jpg" alt="IMG_7602.jpg"></div>
-    <div class="card"><img src="pics/IMG_7871.jpg" alt="IMG_7871.jpg"></div>
-    <div class="card"><img src="pics/IMG_7941.jpg" alt="IMG_7941.jpg"></div>
-    <div class="card"><img src="pics/IMG_8139.jpg" alt="IMG_8139.jpg"></div>
-    <div class="card"><img src="pics/IMG_8177.jpg" alt="IMG_8177.jpg"></div>
-    <div class="card"><img src="pics/IMG_8190.jpg" alt="IMG_8190.jpg"></div>
-    <div class="card"><img src="pics/IMG_8207.jpg" alt="IMG_8207.jpg"></div>
-    <div class="card"><img src="pics/IMG_9466.jpg" alt="IMG_9466.jpg"></div>
-    <div class="card"><img src="pics/IMG_9467.jpg" alt="IMG_9467.jpg"></div>
-    <div class="card"><img src="pics/IMG_9468.jpg" alt="IMG_9468.jpg"></div>
-    <div class="card"><img src="pics/IMG_9803.jpg" alt="IMG_9803.jpg"></div>
-    <div class="card"><img src="pics/image000002.jpg" alt="image000002.jpg"></div>
+    <div class="card"><a href="pics/6975283489072638972.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/6975283489072638972.jpg" alt="6975283489072638972.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0018.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0018.jpg" alt="IMG_0018.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0257.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0257.jpg" alt="IMG_0257.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0511.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0511.jpg" alt="IMG_0511.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0799.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0799.jpg" alt="IMG_0799.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0826.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0826.jpg" alt="IMG_0826.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0837.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0837.jpg" alt="IMG_0837.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0880.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0880.jpg" alt="IMG_0880.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0906.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0906.jpg" alt="IMG_0906.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_0909.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_0909.jpg" alt="IMG_0909.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2097.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2097.jpg" alt="IMG_2097.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2118.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2118.jpg" alt="IMG_2118.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2299.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2299.jpg" alt="IMG_2299.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2320.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2320.jpg" alt="IMG_2320.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2323.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2323.jpg" alt="IMG_2323.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2340.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2340.jpg" alt="IMG_2340.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2451.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2451.jpg" alt="IMG_2451.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2568.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2568.jpg" alt="IMG_2568.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2701.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2701.jpg" alt="IMG_2701.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2907.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2907.jpg" alt="IMG_2907.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2917.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2917.jpg" alt="IMG_2917.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2919.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2919.jpg" alt="IMG_2919.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2933.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2933.jpg" alt="IMG_2933.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2940.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2940.jpg" alt="IMG_2940.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2942.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2942.jpg" alt="IMG_2942.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_2975.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_2975.jpg" alt="IMG_2975.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3005.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3005.jpg" alt="IMG_3005.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3017.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3017.jpg" alt="IMG_3017.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3026.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3026.jpg" alt="IMG_3026.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3027.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3027.jpg" alt="IMG_3027.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3030.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3030.jpg" alt="IMG_3030.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3227.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3227.jpg" alt="IMG_3227.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3292.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3292.jpg" alt="IMG_3292.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3313.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3313.jpg" alt="IMG_3313.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3331.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3331.jpg" alt="IMG_3331.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3333.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3333.jpg" alt="IMG_3333.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_3346.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_3346.jpg" alt="IMG_3346.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4464.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4464.jpg" alt="IMG_4464.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4490.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4490.jpg" alt="IMG_4490.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4524.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4524.jpg" alt="IMG_4524.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4532.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4532.jpg" alt="IMG_4532.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4538.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4538.jpg" alt="IMG_4538.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4578.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4578.jpg" alt="IMG_4578.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4596.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4596.jpg" alt="IMG_4596.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4607.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4607.jpg" alt="IMG_4607.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4609.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4609.jpg" alt="IMG_4609.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_4855.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_4855.jpg" alt="IMG_4855.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5132.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5132.jpg" alt="IMG_5132.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5140.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5140.jpg" alt="IMG_5140.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5143.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5143.jpg" alt="IMG_5143.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5344.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5344.jpg" alt="IMG_5344.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5457.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5457.jpg" alt="IMG_5457.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5544.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5544.jpg" alt="IMG_5544.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5545.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5545.jpg" alt="IMG_5545.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5573.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5573.jpg" alt="IMG_5573.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5664.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5664.jpg" alt="IMG_5664.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5837.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5837.jpg" alt="IMG_5837.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_5890.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_5890.jpg" alt="IMG_5890.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_6010.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_6010.jpg" alt="IMG_6010.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_6881.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_6881.jpg" alt="IMG_6881.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_6995.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_6995.jpg" alt="IMG_6995.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7014.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7014.jpg" alt="IMG_7014.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7055.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7055.jpg" alt="IMG_7055.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7247.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7247.jpg" alt="IMG_7247.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7263.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7263.jpg" alt="IMG_7263.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7360.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7360.jpg" alt="IMG_7360.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7367.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7367.jpg" alt="IMG_7367.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7535.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7535.jpg" alt="IMG_7535.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7545.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7545.jpg" alt="IMG_7545.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7548.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7548.jpg" alt="IMG_7548.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7586.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7586.jpg" alt="IMG_7586.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7602.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7602.jpg" alt="IMG_7602.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7871.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7871.jpg" alt="IMG_7871.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_7941.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_7941.jpg" alt="IMG_7941.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_8139.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_8139.jpg" alt="IMG_8139.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_8177.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_8177.jpg" alt="IMG_8177.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_8190.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_8190.jpg" alt="IMG_8190.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_8207.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_8207.jpg" alt="IMG_8207.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_9466.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_9466.jpg" alt="IMG_9466.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_9467.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_9467.jpg" alt="IMG_9467.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_9468.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_9468.jpg" alt="IMG_9468.jpg"></a></div>
+    <div class="card"><a href="pics/IMG_9803.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/IMG_9803.jpg" alt="IMG_9803.jpg"></a></div>
+    <div class="card"><a href="pics/image000002.jpg" target="_blank" rel="noopener noreferrer"><img src="pics/image000002.jpg" alt="image000002.jpg"></a></div>
 </div>
 </body>
 </html>
