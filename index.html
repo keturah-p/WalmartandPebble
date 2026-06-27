@@ -60,13 +60,12 @@
             display: block;
             text-decoration: none;
         }
-        /* Show full photos in gallery thumbnails (uncropped) */
+        /* Uniform grid thumbnails: fixed height, cropped to fill card */
         img {
             display: block;
             width: 100%;
-            height: auto;
-            max-height: 40vh;    /* prevents images from becoming too tall */
-            object-fit: contain; /* shows the entire image, no cropping */
+            height: 320px;        /* fixed thumbnail height for uniform grid */
+            object-fit: cover;    /* crop to fill the thumbnail area */
             transition: transform 0.2s ease;
         }
         .card:hover img {
